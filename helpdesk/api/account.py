@@ -6,6 +6,7 @@ from frappe.core.doctype.user.user import test_password_strength
 """
 
 
+
 @frappe.whitelist(allow_guest=True)
 def signup(email, first_name, last_name):
 	frappe.utils.validate_email_address(email, True)
